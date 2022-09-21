@@ -8,7 +8,7 @@ This repository is an almost exact copy of the BBC's CVS repository containing p
 
 I have updated the README to use Markdown rather than plain text and have corrected a number of spelling mistakes, but this is otherwise the files that I received from the BBC. If you'd like to see the originals with no alterations, you can [view this point in history](https://github.com/connordoner/bbc-barley/tree/0811212e0a52a810e15ede53500bd80a46c2ad02).
 
-## Contents
+## Contents
 
 * readme.txt - this file
 * src/ - Contains versions of barley used for development, including verbose commenting and extra sanity checking
@@ -17,11 +17,12 @@ I have updated the README to use Markdown rather than plain text and have correc
 
 ## Instructions
 
-### Live
+### Live
 
 To make a copy of the page templates for live, simply run: `./scripts/makelive/` at the top of the cvs tree. This will create a directory called live, which will contain files ready to be uploaded to live.
 
-### Dev
+### Dev
+
 To make a distribution of the page templates for a dev server, run `./scripts/makedev/` at the top of the cvs tree.  This will create a directory called dev, which contains the files ready to be uploaded to a dev server. 
 
 `./scripts/makedevzip` will create a dev distribution in zip format - the prefered format for sending around the bbc
