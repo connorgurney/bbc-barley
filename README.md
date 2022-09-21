@@ -25,7 +25,7 @@ To make a copy of the page templates for live, simply run: `./scripts/makelive/`
 
 To make a distribution of the page templates for a dev server, run `./scripts/makedev/` at the top of the CVS tree.  This will create a directory called dev, which contains the files ready to be uploaded to a dev server. 
 
-`./scripts/makedevzip` will create a dev distribution in zip format - the prefered format for sending around the BBC
+`./scripts/makedevzip` will create a dev distribution in ZIP format - the prefered format for sending around the BBC
 
 ## CVS TODO
 
