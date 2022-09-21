@@ -1,0 +1,6 @@
+#bbcpage_quest {margin:0;padding:0;width:<!--#echo var="bbcpage_surveywidth" -->px;background-color:#ffc;border-color:black;border-style:solid;border-width:1px 0 2px 0;}
+#bbcpage_quest p {margin:0;padding:7px;font-family:arial,helvetica,sans-serif;color:black;position:relative;}
+#bbcpage_quest_yes, #bbcpage_quest_no {color:#009;}
+#bbcpage_quest_yes {right:80px;}
+#bbcpage_quest_no {right:35px;}
+#bbcpage_quest_question {font-weight:bold;}

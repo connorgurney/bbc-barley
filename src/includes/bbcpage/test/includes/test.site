@@ -1,0 +1,9 @@
+<!-- site definition file -->
+<!--#set var="bbcpage_searchcolour" value="666666" -->
+<!--#set var="bbcpage_nav"          value="yes" -->
+<!--#set var="bbcpage_navwidth"     value="110" -->
+<!--#set var="bbcpage_navgraphic"   value="no" -->
+<!--#set var="bbcpage_navgutter"    value="10" -->
+<!--#set var="bbcpage_contentwidth" value="650" -->
+<!--#set var="bbcpage_contentalign" value="left" -->
+<!--#set var="bbcpage_charset"      value="iso-8859-1" -->

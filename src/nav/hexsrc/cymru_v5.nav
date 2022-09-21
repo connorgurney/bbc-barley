@@ -1,0 +1,152 @@
+<!-- GLOBAL NAVIGATION  -->
+<!-- cymru_v5.nav -->
+<!--#set var="bbcpage_toolbarwidth" value="600" 
+--><!--#include virtual="/includes/toolbar.page" -->
+
+<!-- start toptable -->
+<table width="600" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td width="8"><img src="/furniture/tiny.gif" width="8" height="1" alt="" /></td>
+<td width="102"><img src="/furniture/tiny.gif" width="102" height="1" alt="" /><br clear="all" />
+<font face="arial, helvetica, sans-serif" size="1"><!--#include virtual="/includes/date_cymru.ssi" --><br /><a href="/accessibility/">Hygyrchedd</a><br /><a href="/cgi-bin/education/betsie/parser.pl">Geiriau Yn Unig</a></font></td>
+<td width="490" valign="top"><!--#include virtual="${QUERY_STRING}.banner" --></td>
+</tr>
+</table>
+<!-- end TopTable -->
+
+<!--#if expr="($HTTP_USER_AGENT = /MSIE 3/)||(($HTTP_USER_AGENT = /Mozilla\/4\./) && ($HTTP_USER_AGENT != /compatible/))" -->
+<!--#set var="IE3" value="IE3" -->
+<table cellspacing="0" cellpadding="0" border="0" width="600">
+<tr><td width="110" valign="top">
+<!--#endif -->
+
+<!-- start left hand nav -->
+<table cellspacing="0" cellpadding="0" border="0" width="110" align="left">
+<tr>
+<td width="3"><img src="/furniture/tiny.gif" width="8" height="1" alt=""></td>
+<td width="100" align="center"><img src="/furniture/tiny.gif" width="100" height="1" alt=""></td>
+<td width="2"><img src="/furniture/tiny.gif" width="2" height="1" alt=""></td></tr>
+
+<script language="JavaScript" type="text/javascript">
+<!-- // hide from old browsers
+function mainSites(x)
+  { if (x != "") { if (x.indexOf('http:') != -1) { self.location= x; }
+  else { self.location= "http://www.bbc.co.uk" + x; }} return false; }
+function popmailwin(x, y) {window.open(x,y,'status=no,scrollbars=yes,resizable=yes,width=350,height=400');}
+// -->
+</script>
+
+<tr>
+<td width="8"><img src="/furniture/tiny.gif" width="1" height="1" alt=""></td>
+<td width="102" colspan="2">
+                  <div align="center"><img src="/furniture/tiny.gif" width="1" height="4" alt=""><br clear="all">
+                    <font face="Arial,Helvetica" size="1"><a href="/cymru/a-y.shtml">A-Y</a> 
+                    | <a href="/cymru/chwilota.shtml">Chwilota</a><br clear="all"><img src="/furniture/tiny.gif" width="1" height="4" alt=""></font></div>
+</td>
+</tr>
+
+<tr><td width="110" colspan="3"><img src="/nav/images/diweddaraf.gif" width="110" height="13" alt="Y Diweddaraf"></td></tr>
+
+<tr>
+<td width="8"><img src="/furniture/tiny.gif" width="1" height="1" alt=""></td>
+<td width="102" colspan="2"><img src="/furniture/tiny.gif" width="1" height="4" alt=""><br clear="all">
+                  <font face="Arial,Helvetica" size="2"><a href="http://news.bbc.co.uk/hi/english/newyddion/">Newyddion</a><br clear="all">
+                  <img src="/furniture/tiny.gif" width="1" height="4" alt=""><br clear="all">
+                  <a href="/cymru/chwaraeon/">Chwaraeon</a><br clear="all">
+                  <img src="/furniture/tiny.gif" width="1" height="4" alt=""><br clear="all">
+                  <a href="/cymru/y_tywydd/">Y Tywydd</a></font><br clear="all"><img src="/furniture/tiny.gif" width="1" height="4" alt="">
+</td>
+</tr>
+
+<tr>
+<td width="110" colspan="3"><a href="/cymru/live/rc-live.ram"><img src="/nav/images/aryrawyr.gif" width="110" height="17" alt="Radio Cymru yn fyw" border="0"></a><br clear="all"><img src="/furniture/tiny.gif" width="1" height="4" alt=""></td></tr>
+
+<tr><td width="110" colspan="3"><img src="/nav/images/safleodd.gif" width="110" height="13" alt="Safleoedd"><br clear="all"><img src="/furniture/tiny.gif" width="1" height="4" alt=""></td></tr>
+
+<tr>
+<form method="Get" action="/cgi-bin/openurl.pl">
+<td width="110" colspan="3"><font face="Arial, Helvetica" size="2"><img src="/furniture/tiny.gif" width="1" height="3" alt=""><br clear="all">
+<select name="link" onChange="mainSites(this.options[this.selectedIndex].value); return false;">
+<option value="" selected>Safleoedd</option>
+<option value="/cymru/">Cymru'r Byd 
+<option value="http://news.bbc.co.uk/hi/english/newyddion/">Newyddion 
+<option value="/cymru/chwaraeon/">Chwaraeon 
+<option value="/cymru/y_tywydd/">Tywydd 
+<option value="/cymru/addysg/">Addysg 
+<option value="/cymru/adloniant/">Adolygiadau 
+<option value="/cymru/arolwg2001/">Arolwg 2001 
+<option value="/cymru/ble_ar_y_we/">Ble ar y We 
+<option value="/cymru/tramor/">Tramor 
+<option value="/cymru/ecards/">E-gardiau 
+<option value="/ffeil/">Ffeil 
+<option value="/cymru/cwis/">Gemau 
+<option value="/cymru/hanescymru/">Hanes 
+<option value="/cymru/adloniant/llyfrau/">Llais Ll&ecirc;n 
+<option value="/cymru/patagonia/">Patagonia 
+<option value="/cymru/pobolycwm/cymraeg/">Pobol y Cwm 
+<option value="/cymru/radio/">Radio Cymru 
+<option value="/cymru/cyfoes/">Straeon 
+<option value="/cymru/bywyd/ser/">Y S&ecirc;r 
+<option value="/cymru/ysin/">Y S&icirc;n Roc 
+<option value=""> 
+<option value="/england/">Lloegr 
+<option value="/northernireland/">G Iwerddon 
+<option value="/scotland/">Yr Alban 
+<option value="/wales/">Cymru 
+<option value=""> 
+<option value="/cymru/gwybodaeth/">Gwybodaeth 
+<option value="/cymru/schedules/">Ams. teledu 
+<option value="http://www.bbc.co.uk/cgi-perl/whatson/search/daylist.cgi?service_id=49991&DAY=Today">Ams. 
+radio 
+</select>
+<img src="/furniture/tiny.gif" width="1" height="1" hspace="0" vspace="1" alt=""><br clear="all">
+<img src="/furniture/tiny.gif" width="3" height="14" hspace=0 vspace=0 alt="" align="left">
+<input type="image" src="/nav/images/go.gif" width="25" height="14" alt="Ewch" name="GO" border="0">
+<!-- INPUT TYPE="submit" ALT="Ewch" VALUE="Ewch" --> <br clear="all">
+<img src="/furniture/tiny.gif" width="1" height="1" hspace="0" vspace="4" alt=""></font></td>
+</form>
+</tr>
+
+<tr>
+<td width="8"><img src="/furniture/tiny.gif" width="1" height="1" alt=""></td>
+<td width="100"><font face="Arial, Helvetica" size="2"><a href="/" lang="en">BBC Homepage</a><br clear="all"><img src="/furniture/tiny.gif" width="1" height="4" alt=""><br clear="all"><a href="/cymru/">Cymru'r Byd</a><br><!--#include virtual="$QUERY_STRING.crumb"--></font></td>
+<td width="2"><img src="/furniture/tiny.gif" width=1 height=1 alt=""></td>
+</tr>
+
+<tr><td colspan="3"><img src="/furniture/tiny.gif" width="1" height="7" alt="" /></td></tr>
+
+<tr>
+<td width="8" valign="top" align="right"><font size="1">&#187;</font></td>
+<td width="100" valign="top"><font face="Arial, Helvetica" size="2"><!--#include virtual="$QUERY_STRING.local"--><br clear="all">
+<img src="/furniture/tiny.gif" width="1" height="4" alt=""><img src="/nav/images/gwnewch.gif" width="100" height="13" alt="Gwnewch"><br clear="all">
+<img src="/furniture/tiny.gif" width="1" height="4" alt=""><br clear="all">
+<a href="/cymru/schedules/">Amserlen teledu</a><br>
+<img src="/furniture/tiny.gif" width="1" height="4" alt=""><br clear="all">
+<a href="/cymru/schedules/gwrandewch.shtml">Amserlen radio</a><br>
+<img src="/furniture/tiny.gif" width="1" height="4" alt=""><br clear="all">
+<a href="/cymru/ecards/">E-gardiau</a><br>
+<br>
+<a href="/cymru/arolwg2001/">Arolwg 2001</a><br>
+<img src="/furniture/tiny.gif" width="1" height="4" alt=""><br clear="all">
+<a href="/cymru/gwybodaeth/">Gwybodaeth</a><br>
+<img src="/furniture/tiny.gif" width="1" height="4" alt=""><br clear="all">
+<a href="/cymru/gwybodaeth/adborth.shtml">Ymateb</a><br>
+<br>
+<!-- A HREF="/help/">Cymorth</A><BR><BR><BR>
+<FONT SIZE=1>Y dudalen hon?<BR>
+<A onClick="popmailwin('/cgi-bin/navigation/mailto.pl?GO=1&REF=http://www.bbc.co.uk<!--#echo var="DOCUMENT_URI" -->','Mailer')" HREF="/cgi-bin/navigation/mailto.pl?GO=1&REF=http://www.bbc.co.uk<!--#echo var="DOCUMENT_URI" -->" TARGET="Mailer">Gyrru at ffrind!</A></FONT --></font></td>
+<td width="2"><img src="/furniture/tiny.gif" width="1" height="1" alt=""></td>
+</tr>
+</table>
+
+<!--#if expr="$IE3" -->
+</td><td width="10">
+<!--#endif -->
+
+<img src="/furniture/tiny.gif" width="10" height="1" vspace="0" hspace="0" alt="" align="left" border="0">
+
+<!--#if expr="$IE3" -->
+</td><td width="480" valign="top">
+<!--#endif -->
+
+<!-- end cymru_v5.nav  -->

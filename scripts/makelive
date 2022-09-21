@@ -1,0 +1,89 @@
+#!/usr/bin/env sh
+
+# check we're at the top of the cvs tree
+# this check is not very good but it will do for now
+if [ ! -d 'src' ] ; then
+  echo "not at top of CVS reposity";
+  exit;
+fi
+
+# make a live directory
+mkdir -p live
+
+# make the top level files
+./scripts/src2live.pl <src/header.page >live/header.page
+./scripts/src2live.pl <src/footer.page >live/footer.page
+./scripts/src2longlive.pl <src/global.page >live/global.page
+
+# create the image directory
+mkdir -p live/images
+cp ./src/images/*.gif ./live/images
+mkdir -p live/images/bbcpage/v3-0
+cp ./src/images/bbcpage/v3-0/*.gif ./live/images/bbcpage/v3-0
+cp ./src/images/bbcpage/v3-0/.htaccess ./live/images/bbcpage/v3-0
+mkdir -p live/images/bbcpage/v3-3
+cp ./src/images/bbcpage/v3-3/.htaccess ./live/images/bbcpage/v3-3
+cp ./src/images/bbcpage/v3-3/*.gif ./live/images/bbcpage/v3-3
+cp ./src/images/bbcpage/v3-3/*.jpg ./live/images/bbcpage/v3-3
+
+# create the includes directory
+# we don't copy the dates accross, as they are created on live by a cron job
+mkdir -p live/includes
+./scripts/src2live.pl <src/includes/footer.page >live/includes/footer.page
+./scripts/src2live.pl <src/includes/toolbar.page >live/includes/toolbar.page
+cp src/includes/default.* live/includes/
+cp src/includes/tbenh.css live/includes/
+cp src/includes/linktrack.js live/includes/
+cp src/includes/survey_bar.sssi live/includes/
+cp src/includes/survey_css.sssi live/includes/
+cp src/includes/survey_values.sssi live/includes/
+mkdir -p live/includes/bbcpage/test
+cp ./src/includes/bbcpage/test/*.shtml ./live/includes/bbcpage/test
+mkdir -p live/includes/bbcpage/test/includes
+cp ./src/includes/bbcpage/test/includes/* ./live/includes/bbcpage/test/includes
+mkdir -p live/includes/bbcpage/v3-0
+cp ./src/includes/bbcpage/v3-0/*.css ./live/includes/bbcpage/v3-0
+cp ./src/includes/bbcpage/v3-0/.htaccess ./live/includes/bbcpage/v3-0
+mkdir -p live/includes/bbcpage/v3-1
+cp ./src/includes/bbcpage/v3-1/*.css ./live/includes/bbcpage/v3-1
+cp ./src/includes/bbcpage/v3-1/.htaccess ./live/includes/bbcpage/v3-1
+mkdir -p live/includes/bbcpage/v3-2
+cp ./src/includes/bbcpage/v3-2/*.css ./live/includes/bbcpage/v3-2
+cp ./src/includes/bbcpage/v3-2/.htaccess ./live/includes/bbcpage/v3-2
+mkdir -p live/includes/bbcpage/v3-3
+cp ./src/includes/bbcpage/v3-3/*.css ./live/includes/bbcpage/v3-3
+cp ./src/includes/bbcpage/v3-3/.htaccess ./live/includes/bbcpage/v3-3
+mkdir -p live/survey
+cp src/survey/survey.sssi live/survey/
+mkdir -p live/survey/06
+cp src/survey/06/.htaccess live/survey/06/
+cp src/survey/06/redir.shtml live/survey/06/
+mkdir -p live/print
+cp src/print/.htaccess live/print/
+
+# create the nav directory, where nav5 lives
+mkdir -p live/nav
+
+mkdir -p live/nav/images
+cp src/nav/images/*.gif live/nav/images
+
+# we don't copy the dates accross, as they are created on live by a cron job
+# this is fragile, fixme
+mkdir -p live/nav/etc
+cd src/nav/etc
+cp `ls *.nav | grep -v "date"` ../../../live/nav/etc
+cp `ls *.htm | grep -v "date"` ../../../live/nav/etc
+cd ../../../
+
+# creating the nav/hex directories is more complicated
+mkdir -p live/nav/hex
+for i in 00 33 66 99 cc ff; do
+  for j in 00 33 66 99 cc ff; do
+    for k in 00 33 66 99 cc ff; do
+      mkdir -p live/nav/hex/$i$j$k
+      cp src/nav/hexsrc/*.nav live/nav/hex/$i$j$k/
+    done
+  done
+done
+
+echo "Live creation completed";

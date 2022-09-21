@@ -1,0 +1,32 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+// change the URI's to say javascript IS enabled
+var addjs = document.getElementById('bbcpage_quest_para').innerHTML.toString();
+while (addjs.indexOf("js=no") != -1) {addjs = addjs.replace("js=no","js=yes");}
+document.getElementById('bbcpage_quest_para').innerHTML = addjs;
+
+// add a close button
+var addx = document.getElementById('bbcpage_quest_para').innerHTML.toString();
+addx = addx.substring(addx.lastIndexOf("> <") + 2);
+addx = addx.replace(">NO<",">x<");
+addx = addx.replace("bbcpage_quest_no","bbcpage_quest_close");
+document.getElementById('bbcpage_quest_para').innerHTML += addx;
+
+// EXAMPLE of how the ALL stylesheet data SHOULD be included
+document.getElementById('bbcpage_quest_sep').style.display = "none";
+
+-->
+</script>
+<style type="text/css">
+<!--
+/* NOTE that this stylesheet data NEEDS to be included using the method described above IN the javascript */
+/* The stylesheet is here simply for testing purposes */
+#bbcpage_quest {position:absolute;top:20%;left:20%;border:3px solid black;width:275px;height:120px;}
+#bbcpage_quest p {text-align:center;padding-top:25px;}
+#bbcpage_quest_question {display:block;font-weight:bold;}
+#bbcpage_quest_yes, #bbcpage_quest_no {position:absolute;top:4px;background:white;border:1px solid black;text-decoration:none;text-align:center;display:block;width:35px;height:15px;padding:2px 0;}
+#bbcpage_quest_yes {right:140px;top:85px;}
+#bbcpage_quest_no {right:95px;top:85px;}
+#bbcpage_quest_close {position:absolute;top:2px;right:2px;width:9px;height:12px;font-size:12px;line-height:12px;padding:0 4px 2px 4px;color:009;background:white;border:1px solid black;text-decoration:none;text-align:center;display:block;}
+-->
+</style>

@@ -1,0 +1,7 @@
+<div id="bbcpage_quest">
+<!--#if expr="$bbcpage_lang = cymru" -->
+<p id="bbcpage_quest_para"><font size="2" id="bbcpage_quest_font"><span id="bbcpage_quest_statement">Helpwch ni i gadw ein bys ar y pyls.</span> <span id="bbcpage_quest_question">Oes gennych chi 5 munud i roi eich barn am y safle hwn?</span> <a id="bbcpage_quest_yes" href="<!--#echo var="bbcpage_surveypath" -->redir.shtml?survey=yes&url=<!--#echo var="SERVER_NAME" --><!--#echo var="DOCUMENT_URI" -->&js=no">OES</a> <span id="bbcpage_quest_sep">|</span> <a id="bbcpage_quest_no" href="<!--#echo var="bbcpage_surveypath" -->redir.shtml?survey=no&url=<!--#echo var="SERVER_NAME" --><!--#echo var="DOCUMENT_URI" -->&js=no">NAGOES</a></font></p>
+<!--#else -->
+<p id="bbcpage_quest_para"><font size="2" id="bbcpage_quest_font"><span id="bbcpage_quest_statement">Help us to keep our finger on the pulse.</span> <span id="bbcpage_quest_question">Do you have 5 minutes to tell us what you think about this site?</span> <a id="bbcpage_quest_yes" href="<!--#echo var="bbcpage_surveypath" -->redir.shtml?survey=yes&url=<!--#echo var="SERVER_NAME" --><!--#echo var="DOCUMENT_URI" -->&js=no">YES</a> <span id="bbcpage_quest_sep">|</span> <a id="bbcpage_quest_no" href="<!--#echo var="bbcpage_surveypath" -->redir.shtml?survey=no&url=<!--#echo var="SERVER_NAME" --><!--#echo var="DOCUMENT_URI" -->&js=no">NO</a></font></p>
+<!--#endif -->
+</div>

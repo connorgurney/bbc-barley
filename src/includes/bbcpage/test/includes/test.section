@@ -1,0 +1,3 @@
+<!--#set var="bbcpage_banner"       value="includes/bbcpage/test/includes/test" -->
+<!--#set var="bbcpage_crumb"        value="includes/bbcpage/test/includes/test" -->
+<!--#set var="bbcpage_local"        value="includes/bbcpage/test/includes/test" -->

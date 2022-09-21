@@ -1,0 +1,8 @@
+<br clear="all" />
+<!--#if expr="!$bbcpage_toolbarwidth" --><!--#set var="bbcpage_toolbarwidth" value="600" --><!--#endif -->
+<table width="<!--#echo var='bbcpage_toolbarwidth' -->" cellpadding="0" cellspacing="0" border="0" lang="en">
+<tr>
+<td width="110"><img src="/furniture/tiny.gif" height="1" width="110" alt="" /></td>
+<td align="center"><br /><font face="arial, helvetica, sans-serif" size="1"><a class="bbcpageFooter" href="/info/">About the BBC</a> | <a class="bbcpageFooter" href="/help/">Help</a> | <a class="bbcpageFooter" href="/terms/">Terms of Use</a> | <a class="bbcpageFooter" href="/privacy/">Privacy &amp; Cookies Policy</a></font></td>
+</tr>
+</table>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>BBC - Page Layout Templates - Test Page</title>
+
+<meta name="description" content="A Test of the BBC Page Layout Templates" />
+<meta name="keywords"    content="test, templates" />
+<meta name="created"     content="2003-05-22" />
+<meta name="updated"     content="2003-05-22" />
+
+<!--#if expr="$QUERY_STRING" -->
+<!--#include virtual="/includes/bbcpage/test/includes/tests.sssi" -->
+<!--#endif -->
+
+<!-- this is to test the apache config is set up correctly -->
+<!--#if expr="!($bbcpage_contentwidth)" --><!--#set var="oops" value="1" --><!--#endif -->
+
+<!--#include virtual="/includes/bbcpage/test/includes/test.site" -->
+<!--#include virtual="/includes/bbcpage/test/includes/test.section" -->
+
+<!--#include virtual="/global.page" -->
+
+<style type="text/css">
+<!--
+body { font-family:sans-serif;}
+-->
+</style>
+
+</head>
+
+<body bgcolor="#336699" text="#ffffff" link="#ffffff" vlink="#ffffff" alink="#ffffff" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+
+<!--#include virtual="/header.page" -->
+
+<!--#if expr="$oops" -->
+<!-- cunningly, checks both for environment vars and page parsing at the same time -->
+<h2>oops:</h2>
+<p>If you see this message, it is likely that the correct lines have not been added to the apache config.  Check you have added them and that apache has been restarted or reloaded to ensure the new config is loaded.</p>
+<!--#endif -->
+
+<p>If this page appears with:</p>
+<ul>
+<li>the words "barley test page" above this text</li>
+<li>a bbc toolbar with a search box</li>
+<li>the word "nav" to the left of this text</li>
+<li>no SSI "An error occurred..." messages</li>
+</ul>
+<p>then it is likely that Barley is correctly set up on your dev server</p>
+
+<h2>Tests</h2>
+<ul>
+<li><a href="?explore=orange">Orange "Explore" button</a></li>
+<li><a href="?mothball_date=on">Set mothballed date as "April 2001"</a></li>
+<li><a href="?mothball_date=off">Turn auto mothballed date off</a></li>
+<li><a href="?mothball=optout">Opt out of mothballing</a></li>
+<li><a href="?survey=pop">Survey popover</a></li>
+<li><a href="?survey=bar">Survey bar</a></li>
+<li><a href="?survey=scoped">Scoped survey (/food/)</a></li>
+<li><a href="?variant=cymru">Welsh variant</a></li>
+<li><a href="?variant=alba">Scottish variant</a></li>
+<li><a href="?variant=kids">Kids variant</a></li>
+<li><a href="?variant=cbeebies">CBeebies variant</a></li>
+<li><a href="?global_styling=on">Turn on likely global CSS declarations</a></li>
+<li><strong><a href="index.shtml">Back to default</a></strong></li>
+</ul>
+<p>NB: Some of these query strings can be combined if required</p>
+
+<!--#include virtual="/footer.page" -->
+
+</body>
+</html>

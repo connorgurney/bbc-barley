@@ -1,0 +1,19 @@
+<!-- begin footer -->
+<!--#if expr="$bbcpage_print = yes" --></td></tr></table><!--#else -->
+<!--#if expr="$bbcpage_nav != no" --></td></tr></table><!--#endif -->
+<!--#if expr="$bbcpage_contentalign = center && $bbcpage_contentwidth != 100%" --></div><!--#endif -->
+<!--if no nav or stretchy but not both -->
+<!--#endif -->
+<br clear="all" />
+<table <!--#if expr="$bbcpage_contentwidth = 100% || $bbcpage_contentalign = center" -->width="100%"<!--#endif --> cellpadding="0" cellspacing="0" border="0" lang="en" id="bbcpageTableFooter">
+<tr><!--#if expr="$bbcpage_nav != no && $bbcpage_print != yes" -->
+<td class="bbcpageFooterMargin" width="<!--#echo var='bbcpage_navwidth' -->"><img src="/f/t.gif" width="<!--#echo var='bbcpage_navwidth' -->" height="1" alt="" /></td>
+<!--#if expr="$bbcpage_navgutter != no" --><td class="bbcpageFooterGutter" width="10"><img src="/f/t.gif" width="10" height="1" alt="" /></td><!--#endif --><!--#endif -->
+<!--#if expr="$bbcpage_contentwidth = 100% || $bbcpage_contentalign = center" -->
+<td class="bbcpageFooter" width="100%" align="center"><!--#else -->
+<td class="bbcpageFooter" width="<!--#echo var='bbcpage_contentwidth' -->" align="center"><img src="/f/t.gif" width="<!--#echo var='bbcpage_contentwidth' -->" height="1" alt="" /><!--#endif -->
+<br /><font face="arial, helvetica, sans-serif" size="1"><a class="bbcpageFooter" href="/info/">About the BBC</a> | <a class="bbcpageFooter" href="/help/">Help</a> | <a class="bbcpageFooter" href="/terms/">Terms of Use</a> | <a class="bbcpageFooter" href="/privacy/">Privacy &amp; Cookies Policy</a><!--#if expr="$BBCDOTCOM_SHOWFOOTER = yes" --><br /><a class="bbcpageFooter" href="<!--#echo encoding="none" var="BBCDOTCOM_FOOTERHREF" -->"><!--#echo var="BBCDOTCOM_FOOTERTEXT" --></a><!--#endif --><br />&nbsp;</font></td></tr>
+</table>
+<br clear="all" />
+<!--#if expr="$bbcpage_disabletracking != 'yes'" --><script src="/includes/linktrack.js?2" type="text/javascript"></script><!--#endif -->
+<!-- end footer -->

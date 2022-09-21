@@ -1,0 +1,46 @@
+<!--! content type meta tag -->
+<meta http-equiv="Content-Type" content="text/html;charset=<!--#echo var='bbcpage_charset' -->" />
+
+<!--! checking for the print variable, which mod_rewrite messes around with -->
+<!--#if expr="$REDIRECT_bbcpage_print = yes || $REDIRECT_REDIRECT_bbcpage_print = yes" --><!--#set var="bbcpage_print" value="yes" --><meta name="ROBOTS" content="NOINDEX,NOFOLLOW" /><!--#endif -->
+
+<!--! Default Explore color -->
+<!--#if expr="$bbcpage_navcolor=''" --><!--#set var="bbcpage_navcolor" value="blue" --><!--#endif -->
+
+<!--! bbcpage_language is a synomyn for bbcpage_variant, for backwards compatibility -->
+<!--#if expr="$bbcpage_language && !$bbcpage_variant" --><!--#set var="bbcpage_variant" value="$bbcpage_language" --><!--#endif -->
+<!--! cymru and alba conflict with radio/music variants -->
+<!--#if expr="( $bbcpage_lang = /cymru|alba/ ) && ( $bbcpage_variant = /radio|music/ ) " --><!--#set var="bbcpage_variant" value="" --><!--#endif -->
+
+<!--#if expr="$bbcpage_survey = yes && $HTTP_COOKIE = /BBC-UID=/" -->
+	<!--#include virtual="/includes/blq/include/pulse/core.sssi" -->
+	<!--#if expr='$pulse_go = 1' -->
+		<!--#include virtual="/includes/blq/include/pulse/bbcpage.sssi" -->
+	<!--#endif -->
+<!--#endif -->
+
+<!--#if expr="$bbcpage_topleft_bgcolour && $bbcpage_topleft_textcolour && $bbcpage_topleft_linkcolour" -->
+	<style type="text/css">
+	.bbcpageTopleftlink,a.bbcpageTopleftlink,a:link.bbcpageTopleftlink,a:hover.bbcpageTopleftlink,a:visited.bbcpageTopleftlink {background:#<!--#echo var="bbcpage_topleft_bgcolour"-->;color:#<!--#echo var="bbcpage_topleft_linkcolour" -->;text-decoration:underline;}
+	.bbcpageToplefttd {background:#<!--#echo var="bbcpage_topleft_bgcolour"-->;color:#<!--#echo var="bbcpage_topleft_textcolour" -->;}
+	</style>
+<!--#endif -->
+<!--[if IE]><![if gte IE 6]><![endif]-->
+	<style type="text/css">
+		@import '/includes/bbcpage/v3-3/toolbar.css';
+	</style>
+<!--[if IE]><![endif]><![endif]-->
+<!--[if gte IE 6]>
+	<style type="text/css" media="screen">
+		#bbcpageExplore a {height:22px;}
+		#bbcpageMothball a {height:73px;}
+	</style>
+<![endif]-->
+
+<!--! for mail to a friend link -->
+<script language="JavaScript" type="text/javascript">
+<!--
+function popmailwin(x, y) {window.open(x,y,'status=no,scrollbars=yes,resizable=yes,width=350,height=400');}
+// -->
+</script>
+

@@ -1,0 +1,16 @@
+<!-- inc.footer.page -->
+<br clear="all" />
+<!--#if expr="!$bbcpage_toolbarwidth" --><!--#set var="bbcpage_toolbarwidth" value="600" --><!--#endif -->
+<!--#if expr="!$bbcpage_navwidth" --><!--#set var="bbcpage_navwidth" value="110" --><!--#endif -->
+<table width="<!--#echo var='bbcpage_toolbarwidth' -->" cellpadding="0" cellspacing="0" border="0" lang="en">
+<tr>
+<td width="<!--#echo var='bbcpage_navwidth' -->"><img src="/f/t.gif" alt="" width="<!--#echo var='bbcpage_navwidth' -->" height="1"></td>
+<!--#if expr="$bbcpage_navgutter != no" -->
+<td width="10"><img src="/f/t.gif" alt="" width="10" height="1"></td>
+<!--#endif -->
+<td align="center" width="100%"><font face="arial, helvetica, sans-serif" size="1"><a class="bbcpageFooter" href="/info/">About the BBC</a> | <a class="bbcpageFooter" href="/help/">Help</a> | <a class="bbcpageFooter" href="/terms/">Terms of Use</a> | <a class="bbcpageFooter" href="/privacy/">Privacy &amp; Cookies Policy</a></font></td>
+</tr>
+</table>
+<!--#if expr="$bbcpage_disabletracking != 'yes'" --><script src="/includes/linktrack.js" type="text/javascript"></script><!--#endif -->
+<!-- end inc.footer.page -->
+

@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+# check we're at the top of the cvs tree
+# this check is not very good but it will do for now
+if [ ! -d 'src' ] ; then
+  echo "not at top of CVS repositry";
+  exit;
+fi
+
+./scripts/makedev
+rm devserver.zip
+
+cd dev
+zip -rq ../devserver.zip ./*
+cd ..
+
+echo "Dev zip creation completed";

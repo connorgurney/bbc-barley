@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{QUERY_STRING}  survey=no
+RewriteCond %{QUERY_STRING}  url=([^&]*)
+RewriteRule .*  http://%1 [CO=bbcsurvey:2006q1:bbc.co.uk:50400:/,R]
+
+RewriteCond %{QUERY_STRING}  survey=yes
+RewriteCond %{QUERY_STRING}  url=([^&]*)\/.*&js=([^&]*)
+RewriteRule .*  http://www.surveys.com/bbc/default.aspx?js=%2&fromsrc=%1 [CO=bbcsurvey:2006q1:bbc.co.uk:50400:/,R]

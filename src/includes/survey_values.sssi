@@ -1,0 +1,85 @@
+<!--#set var="bbcpage_surveypath" value="/survey/06/"-->
+<!--#set var="bbcpage_surveyname" value="2006q1"-->
+<!--#if expr="$HTTP_COOKIE != /bbcsurvey=${bbcpage_surveyname}/" -->
+
+<!--#if expr='$bbcpage_surveysite = 1xtra' --><!--#set var="bbcpage_surveycount_num" value="2" --><!--#set var="bbcpage_surveycount_den" value="29" -->
+<!--#elif expr='$bbcpage_surveysite = 6music' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="13" -->
+<!--#elif expr='$bbcpage_surveysite = actionnetwork' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="45" -->
+<!--#elif expr='$bbcpage_surveysite = apprentice' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="20" -->
+<!--#elif expr='$bbcpage_surveysite = arts' --><!--#set var="bbcpage_surveycount_num" value="3" --><!--#set var="bbcpage_surveycount_den" value="13" -->
+<!--#elif expr='$bbcpage_surveysite = asiannetwork' --><!--#set var="bbcpage_surveycount_num" value="7" --><!--#set var="bbcpage_surveycount_den" value="29" -->
+<!--#elif expr='$bbcpage_surveysite = bbc7' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="22" -->
+<!--#elif expr='$bbcpage_surveysite = bbcfour' --><!--#set var="bbcpage_surveycount_num" value="2" --><!--#set var="bbcpage_surveycount_den" value="33" -->
+<!--#elif expr='$bbcpage_surveysite = bbcthree' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="200" -->
+<!--#elif expr='$bbcpage_surveysite = bbctwo' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="18" -->
+<!--#elif expr='$bbcpage_surveysite = berkshire' --><!--#set var="bbcpage_surveycount_num" value="5" --><!--#set var="bbcpage_surveycount_den" value="26" -->
+<!--#elif expr='$bbcpage_surveysite = bristol' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="42" -->
+<!--#elif expr='$bbcpage_surveysite = casualty' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="1000" -->
+<!--#elif expr='$bbcpage_surveysite = cbbc' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="217" -->
+<!--#elif expr='$bbcpage_surveysite = cbeebies' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="104" -->
+<!--#elif expr='$bbcpage_surveysite = celebdaq' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="333" -->
+<!--#elif expr='$bbcpage_surveysite = collective' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="71" -->
+<!--#elif expr='$bbcpage_surveysite = comedy' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="44" -->
+<!--#elif expr='$bbcpage_surveysite = cornwall' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="41" -->
+<!--#elif expr='$bbcpage_surveysite = cymru' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="40" -->
+<!--#elif expr='$bbcpage_surveysite = digital' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="49" -->
+<!--#elif expr='$bbcpage_surveysite = doctorwho' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="111" -->
+<!--#elif expr='$bbcpage_surveysite = eastenders' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="62" -->
+<!--#elif expr='$bbcpage_surveysite = filmnetwork' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="15" -->
+<!--#elif expr='$bbcpage_surveysite = food' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="357" -->
+<!--#elif expr='$bbcpage_surveysite = gardening' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="14" -->
+<!--#elif expr='$bbcpage_surveysite = gcsebitezise' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="1000" -->
+<!--#elif expr='$bbcpage_surveysite = h2g2' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="143" -->
+<!--#elif expr='$bbcpage_surveysite = health' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="35" -->
+<!--#elif expr='$bbcpage_surveysite = history' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="59" -->
+<!--#elif expr='$bbcpage_surveysite = holiday' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="8" -->
+<!--#elif expr='$bbcpage_surveysite = homepage' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="100000" -->
+<!--#elif expr='$bbcpage_surveysite = homes' --><!--#set var="bbcpage_surveycount_num" value="3" --><!--#set var="bbcpage_surveycount_den" value="34" -->
+<!--#elif expr='$bbcpage_surveysite = hustle' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="2" -->
+<!--#elif expr='$bbcpage_surveysite = languages' --><!--#set var="bbcpage_surveycount_num" value="3" --><!--#set var="bbcpage_surveycount_den" value="37" -->
+<!--#elif expr='$bbcpage_surveysite = learning' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="161" -->
+<!--#elif expr='$bbcpage_surveysite = london' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="270" -->
+<!--#elif expr='$bbcpage_surveysite = manchester' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="58" -->
+<!--#elif expr='$bbcpage_surveysite = movies' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="400" -->
+<!--#elif expr='$bbcpage_surveysite = music' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="49" -->
+<!--#elif expr='$bbcpage_surveysite = neighbours' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="10000" -->
+<!--#elif expr='$bbcpage_surveysite = news' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="10000" -->
+<!--#elif expr='$bbcpage_surveysite = newsround' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="400" -->
+<!--#elif expr='$bbcpage_surveysite = newswales' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="833" -->
+<!--#elif expr='$bbcpage_surveysite = newyddion' --><!--#set var="bbcpage_surveycount_num" value="10" --><!--#set var="bbcpage_surveycount_den" value="11" -->
+<!--#elif expr='$bbcpage_surveysite = northernireland' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="20" -->
+<!--#elif expr='$bbcpage_surveysite = nottingham' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="60" -->
+<!--#elif expr='$bbcpage_surveysite = parenting' --><!--#set var="bbcpage_surveycount_num" value="2" --><!--#set var="bbcpage_surveycount_den" value="17" -->
+<!--#elif expr='$bbcpage_surveysite = radio1' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="10000" -->
+<!--#elif expr='$bbcpage_surveysite = radio2' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="588" -->
+<!--#elif expr='$bbcpage_surveysite = radio3' --><!--#set var="bbcpage_surveycount_num" value="2" --><!--#set var="bbcpage_surveycount_den" value="35" -->
+<!--#elif expr='$bbcpage_surveysite = radio4' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="666" -->
+<!--#elif expr='$bbcpage_surveysite = radiofivelive' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="54" -->
+<!--#elif expr='$bbcpage_surveysite = radioplayer' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="200" -->
+<!--#elif expr='$bbcpage_surveysite = religionandethics' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="9" -->
+<!--#elif expr='$bbcpage_surveysite = scienceandnature' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="44" -->
+<!--#elif expr='$bbcpage_surveysite = scotland' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="46" -->
+<!--#elif expr='$bbcpage_surveysite = search' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="1000" -->
+<!--#elif expr='$bbcpage_surveysite = skillswise' --><!--#set var="bbcpage_surveycount_num" value="2" --><!--#set var="bbcpage_surveycount_den" value="21" -->
+<!--#elif expr='$bbcpage_surveysite = somerset' --><!--#set var="bbcpage_surveycount_num" value="3" --><!--#set var="bbcpage_surveycount_den" value="10" -->
+<!--#elif expr='$bbcpage_surveysite = southyorkshire' --><!--#set var="bbcpage_surveycount_num" value="2" --><!--#set var="bbcpage_surveycount_den" value="13" -->
+<!--#elif expr='$bbcpage_surveysite = sport' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="10000" -->
+<!--#elif expr='$bbcpage_surveysite = sportdaq' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="125" -->
+<!--#elif expr='$bbcpage_surveysite = teens' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="175" -->
+<!--#elif expr='$bbcpage_surveysite = tees' --><!--#set var="bbcpage_surveycount_num" value="2" --><!--#set var="bbcpage_surveycount_den" value="5" -->
+<!--#elif expr='$bbcpage_surveysite = threecounties' --><!--#set var="bbcpage_surveycount_num" value="2" --><!--#set var="bbcpage_surveycount_den" value="79" -->
+<!--#elif expr='$bbcpage_surveysite = totp' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="1000" -->
+<!--#elif expr='$bbcpage_surveysite = tv' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="64" -->
+<!--#elif expr='$bbcpage_surveysite = wales' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="20" -->
+<!--#elif expr='$bbcpage_surveysite = weather' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="1000" -->
+<!--#elif expr='$bbcpage_surveysite = webwise' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="19" -->
+<!--#elif expr='$bbcpage_surveysite = test' --><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="1" -->
+<!--#else--><!--#set var="bbcpage_surveycount_num" value="1" --><!--#set var="bbcpage_surveycount_den" value="100" --><!--#endif -->
+
+<!--#func var="bbcpage_survey_rnd" func="random" min="1" max="$bbcpage_surveycount_den" -->
+<!--#func var="bbcpage_survey_go" func="cmp" a="${bbcpage_survey_rnd}" op="le" b="${bbcpage_surveycount_num}" -->
+<!--#if expr='$bbcpage_survey_go = 1' -->
+<!--#if expr='$bbcpage_nav = no' --><!--#set var="bbcpage_surveywidth" value="$bbcpage_contentwidth" -->
+<!--#elif expr='$bbcpage_navgutter = no' --><!--#func var="bbcpage_surveywidth" func="add" value="$bbcpage_navwidth" value="$bbcpage_contentwidth" -->
+<!--#else --><!--#func var="bbcpage_surveywidth" func="add" value="$bbcpage_navwidth" value="10" value="$bbcpage_contentwidth" -->
+<!--#endif --><!--#endif --><!--#endif -->

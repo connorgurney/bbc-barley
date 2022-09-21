@@ -1,0 +1,3 @@
+ExpiresByType image/gif A31104000
+ExpiresByType image/jpeg A31104000
+ExpiresByType image/png A31104000

@@ -1,0 +1,4 @@
+<h2><br />&nbsp;&nbsp;Barley Test Page<br /></h2>
+<!--#if expr="" -->
+<p>Oops: it appears banner files are not being parsed.  Check the apache config.</p>
+<!--#endif -->

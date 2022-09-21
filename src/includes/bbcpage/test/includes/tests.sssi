@@ -1,0 +1,59 @@
+<!--#if expr="$QUERY_STRING=/survey=pop/" -->
+	<!--#set var="bbcpage_survey" value="yes" -->
+	<!--#set var="bbcpage_surveysite" value="test" -->
+	<!--#set var="COUNTRY" value="gb" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/survey=bar/" -->
+	<!--#set var="bbcpage_survey" value="yes" -->
+	<!--#set var="bbcpage_surveysite" value="testbar" -->
+	<!--#set var="COUNTRY" value="gb" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/survey=scoped/" -->
+	<!--#set var="bbcpage_survey" value="yes" -->
+	<!--#set var="pulse_scope" value="food" -->
+	<!--#set var="bbcpage_surveysite" value="test" -->
+	<!--#set var="COUNTRY" value="gb" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/variant=alba/" -->
+	<!--#set var="bbcpage_lang" value="alba" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/variant=cymru/" -->
+	<!--#set var="bbcpage_lang" value="cymru" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/variant=kids/" -->
+	<!--#set var="bbcpage_variant" value="kids" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/variant=cbeebies/" -->
+	<!--#set var="bbcpage_variant" value="cbeebies" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/explore=orange/" -->
+	<!--#set var="bbcpage_navcolor" value="orange" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/mothball_date=on/" -->
+	<!--#set var="bbcpage_mothball_date" value="April 2001" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/mothball_date=off/" -->
+	<!--#set var="bbcpage_mothball_date" value="off" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/mothball=optout/" -->
+	<!--#set var="bbcpage_mothball" value="optout" -->
+<!--#endif -->
+
+<!--#if expr="$QUERY_STRING=/global_styling=on/" -->
+<style type="text/css">
+<!--
+p, li, input {font-size:1.2em; color:red}
+a, input {text-decoration:underline; font-weight:bold; color:red}
+-->
+</style>
+<!--#endif -->

@@ -1,0 +1,51 @@
+#!/usr/bin/env sh
+
+# check we're at the top of the cvs tree
+# this check is not very good but it will do for now
+if [ ! -d 'src' ] ; then
+  echo "not at top of CVS reposity";
+  exit;
+fi
+
+# make a live directory
+mkdir -p devvirt
+
+# make the top level files
+./scripts/src2dev.pl <src/header.page | sed 's/file=/virtual=/g' >devvirt/header.page
+./scripts/src2dev.pl <src/footer.page | sed 's/file=/virtual=/g' >devvirt/footer.page
+./scripts/src2longdev.pl <src/global.page | sed 's/file=/virtual=/g' >devvirt/global.page
+
+# create the image directory
+mkdir -p devvirt/images
+cp ./src/images/*.gif ./devvirt/images
+
+# create the includes directory
+mkdir -p devvirt/includes
+./scripts/src2dev.pl <src/includes/footer.page >devvirt/includes/footer.page
+./scripts/src2dev.pl <src/includes/toolbar.page >devvirt/includes/toolbar.page
+cp src/includes/default.* devvirt/includes/
+cp src/includes/*date* devvirt/includes/
+cp src/includes/tbenh.css dev/includes/
+cp src/includes/linktrack.js dev/includes/
+
+# create the nav directory, where nav5 lives
+mkdir -p devvirt/nav
+
+mkdir -p devvirt/nav/images
+cp src/nav/images/*.gif devvirt/nav/images
+mkdir -p devvirt/nav/etc
+cp src/nav/etc/*.nav devvirt/nav/etc
+cp src/nav/etc/*.htm devvirt/nav/etc
+
+# creating the nav/hex directories is more complicated
+mkdir -p devvirt/nav/hex
+for i in 00 33 66 99 cc ff; do
+  for j in 00 33 66 99 cc ff; do
+    for k in 00 33 66 99 cc ff; do
+      mkdir -p devvirt/nav/hex/$i$j$k
+      cp src/nav/hexsrc/*.nav devvirt/nav/hex/$i$j$k/
+    done
+  done
+done
+
+echo "Dev virt creation completed";
