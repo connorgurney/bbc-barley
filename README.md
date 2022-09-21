@@ -2,7 +2,7 @@
 
 This set of files contains everything used in creating and maintaining the Barley source files, as well as some useful oddities. As this is not a normal development project, a non-standard directory layout has been used.
 
-## Preword
+## Foreword
 
 This repository is an almost exact copy of the BBC's CVS repository containing page layout templates (colloquially known as Barley) used on BBC.co.uk between circa 2002 through to 2008 (when they were superseded by [Barlesque](https://www.bbc.co.uk/includes/blq/)).
 
